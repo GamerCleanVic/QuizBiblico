@@ -1,4 +1,4 @@
-# QuizBiblico# GamerCleanVic.github.io
+##Quiz Bíblico
 
-<a href="<a href="http://gamercleanvic.github.io/QuizBiblico html/"><img src="http://migre.me/tkm8Z"></a>
+<a href="<a href="gamercleanvic.github.io/QuizBiblico/"><img src="http://migre.me/tkm8Z"></a>
 
