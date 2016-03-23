@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"expanded":false,"name":"Cidade normal","order":2,"parentId":0,"scrollX":792,"scrollY":691.6363636363636},
+{"id":2,"expanded":false,"name":"Cidade da floresta","order":1,"parentId":0,"scrollX":792,"scrollY":1176},
+{"id":3,"expanded":false,"name":"Cidade de neve","order":3,"parentId":0,"scrollX":792,"scrollY":709.0909090909091},
+{"id":4,"expanded":false,"name":"Cidade abandonada","order":4,"parentId":0,"scrollX":792,"scrollY":691.6363636363636},
+{"id":5,"expanded":false,"name":"Cidade de mineração","order":5,"parentId":0,"scrollX":792,"scrollY":691.6363636363636},
+{"id":6,"expanded":false,"name":"Templo flutuante","order":6,"parentId":0,"scrollX":792,"scrollY":709.0909090909091}
+]
