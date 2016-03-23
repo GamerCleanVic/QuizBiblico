@@ -6,8 +6,8 @@
 
         <param name="quality" value="high" />
 
-<embed src="http://migre.me/tkm8Z" quality="high"  width="500" height="420">
+    <embed src="gamercleanvic.github.io/QuizBiblico" quality="high"  width="500" height="420">
 
-</embed>
+    </embed>
 
 </object>
