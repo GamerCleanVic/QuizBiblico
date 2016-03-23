@@ -1,4 +1,4 @@
 ##Quiz Bíblico
 
 ##Play
-https://www.gamercleanvic.github.io/QuizBiblico
+https://gamercleanvic.github.io/QuizBiblico
