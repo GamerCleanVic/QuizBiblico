@@ -1,3 +1,4 @@
 ##Quiz Bíblico
 
-<a href="gamercleanvic.github.io/QuizBiblico/">Play</a>
+##Play
+gamercleanvic.github.io/QuizBiblico
