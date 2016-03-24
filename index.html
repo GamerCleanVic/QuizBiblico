@@ -21,27 +21,27 @@
             <h1  id = "fb-bem-vindo" > </ h1>
             // Local seguinte código após a chamada FB.init.
 
-function onLogin ( response )  { 
-  if  ( response . status ==  'connected' )  { 
-    FB . api ( '/me?fields=first_name' ,  function ( data )  { 
-      var welcomeBlock = document . getElementById ( 'fb-welcome' ); 
-      welcomeBlock . innerHTML =  'Hello, '  + Dados . First_name +  ' '! ; 
-    }); 
-  } 
-}
+            function onLogin ( response )  { 
+                if  ( response . status ==  'connected' )  { 
+                FB . api ( '/me?fields=first_name' ,  function ( data )  { 
+                var welcomeBlock = document . getElementById ( 'fb-welcome' ); 
+                welcomeBlock . innerHTML =  'Hello, '  + Dados . First_name +  ' '! ; 
+            }); 
+            } 
+            }
 
-FB . GetLoginStatus ( função ( resposta )  { 
-  // Verifica status de login na carga, e se o usuário é 
-  // já logado, vá diretamente para a mensagem de boas-vindas. 
-  Se  ( a resposta . Estatuto ==  'conectado' )  { 
-    OnLogin ( resposta ); 
-  }  else  { 
-    // Caso contrário, mostra Entrada de diálogo pela primeira vez. 
-    FB . de login ( função ( resposta )  { 
-      OnLogin ( resposta ); 
-    },  { escopo :  'user_friends, e-mail' }); 
-  } 
-});
+            FB . GetLoginStatus ( função ( resposta )  { 
+            // Verifica status de login na carga, e se o usuário é 
+             // já logado, vá diretamente para a mensagem de boas-vindas. 
+            Se  ( a resposta . Estatuto ==  'conectado' )  { 
+            OnLogin ( resposta ); 
+            }  else  { 
+             // Caso contrário, mostra Entrada de diálogo pela primeira vez. 
+             FB . de login ( função ( resposta )  { 
+             OnLogin ( resposta ); 
+            },  { escopo :  'user_friends, e-mail' }); 
+            } 
+            });
             // Adicionar código FACEBOOK adicionais aqui 
             };
 
