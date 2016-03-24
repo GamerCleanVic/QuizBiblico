@@ -1,5 +1,3 @@
 ##Quiz Bíblico (Demo)
 
 <a href="https://gamercleanvic.github.io/QuizBiblico/"><img src="http://migre.me/tkm8Z"></a>
-
-<!-- Facebook Badge START --><a href="https://www.facebook.com/jonassd1" title="Jonas Silveira Dias" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">Jonas Silveira Dias</a><br /><a href="https://www.facebook.com/jonassd1" title="Jonas Silveira Dias" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/100001027990681.2963.1233838585.png" style="border: 0px;" alt="" /></a><br /><a href="https://www.facebook.com/badges/" title="Crie seu pr&#xf3;prio atalho!" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">Criar seu atalho</a><!-- Facebook Badge END -->
