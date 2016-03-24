@@ -11,48 +11,26 @@
         <title>Quiz Bíblico</title>
     </head>
     <body style="background-color: black">
-        <script> 
-            janela . fbAsyncInit =  função ()  { 
-             FB . Init ({ 
-            appId       :  '216820255341905' , 
-            XFBML       :  verdade , 
-            a versão     :  "v2.5" 
-            });
-            <h1  id = "fb-bem-vindo" > </ h1>
-            // Local seguinte código após a chamada FB.init.
+        <h1 id="fb-welcome"></h1>
+        <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '216820255341905',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
 
-            function onLogin ( response )  { 
-                if  ( response . status ==  'connected' )  { 
-                FB . api ( '/me?fields=first_name' ,  function ( data )  { 
-                var welcomeBlock = document . getElementById ( 'fb-welcome' ); 
-                welcomeBlock . innerHTML =  'Hello, '  + Dados . First_name +  ' '! ; 
-            }); 
-            } 
-            }
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
 
-            FB . GetLoginStatus ( função ( resposta )  { 
-            // Verifica status de login na carga, e se o usuário é 
-             // já logado, vá diretamente para a mensagem de boas-vindas. 
-            Se  ( a resposta . Estatuto ==  'conectado' )  { 
-            OnLogin ( resposta ); 
-            }  else  { 
-             // Caso contrário, mostra Entrada de diálogo pela primeira vez. 
-             FB . de login ( função ( resposta )  { 
-             OnLogin ( resposta ); 
-            },  { escopo :  'user_friends, e-mail' }); 
-            } 
-            });
-            // Adicionar código FACEBOOK adicionais aqui 
-            };
-
-            ( function ( d , s , id ){ 
-             var js , fjs = d . getElementsByTagName ( s )[ 0 ]; 
-            if  ( d . getElementById ( id ))  { return ;} 
-            js = d . createElement ( s ); js . id = id ; 
-            js . src =  "//connect.facebook.net/en_US/sdk.js" ; 
-             fjs . parentNode . insertBefore ( js , fjs ); 
-            }( document ,  'script' ,  'facebook-jssdk' )); 
-        </script>
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
         <script type="text/javascript" src="js/libs/pixi.js"></script>
         <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
         <script type="text/javascript" src="js/libs/lz-string.js"></script>
