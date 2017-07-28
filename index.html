@@ -23,5 +23,30 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script src="https://telegram.org/js/games.js"></script>
+        
+        // Telegram apps will implement this logic to add service params (e.g. tgShareScoreUrl) to game URL
+  function urlAppendHashParams(url, addHash) {
+    'https://gamercleanvic.github.io/QuizBiblico/?query=1#hash'
+    'tgShareScoreUrl=' + encodeURIComponent('tgb://share_game_score?hash=very_long_hash123')
+
+    var ind = url.indexOf('#');
+    if (ind < 0) {
+      https://gamercleanvic.github.io/QuizBiblico/ -> https://gamercleanvic.github.io/QuizBiblico/#tgShareScoreUrl=etc
+      return url + '#' + addHash;
+    }
+    var curHash = url.substr(ind + 1);
+    if (curHash.indexOf('=') >= 0 || curHash.indexOf('?') >= 0) {
+      https://gamercleanvic.github.io/QuizBiblico/#hash=1 -> https://gamercleanvic.github.io/QuizBiblico/#hash=1&tgShareScoreUrl=etc
+      https://gamercleanvic.github.io/QuizBiblico/#path?query -> https://gamercleanvic.github.io/QuizBiblico/#path?query&tgShareScoreUrl=etc
+      return url + '&' + addHash;
+    }
+    https://gamercleanvic.github.io/QuizBiblico/#hash -> https://gamercleanvic.github.io/QuizBiblico/#hash?tgShareScoreUrl=etc
+    if (curHash.length > 0) {
+      return url + '?' + addHash;
+    }
+    https://gamercleanvic.github.io/QuizBiblico/# -> https://gamercleanvic.github.io/QuizBiblico/#tgShareScoreUrl=etc
+    return url + addHash;
+  }
+
     </body>
 </html>
